@@ -82,3 +82,76 @@ const productos = [
     }
     
 ]
+
+// Funcion para definir precio en enteros.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Funcion para cargar las tarjetas de los productos en el html.
+
+
+function mostrarProductos(){
+    
+    let cardsHtml = '';
+
+    for (const producto of productos){
+        cardsHtml += `
+            <div class="card">
+                <img>${producto.image}</img>
+                <div class="nombre">${producto.name}</div>
+                <div><span class="precio-actual">${producto.price}</div>
+                <div class="valoracion">${producto.stars}${producto.reviews}</div>
+                <p>${producto.seller}</p>
+            </div>      
+        `
+    }
+}
+
+
+
+/* function renderizarServicios(){
+
+    let cardsHtml = '';
+    let optionHtml = '';
+
+    for (const servicio of SERVICIOS) {
+
+        cardsHtml += `
+            <article class="article">
+                <h3>${servicio.name}</h3>
+                <p>${servicio.duracion} min</p>
+                <span class="price">
+                    ${formatMoney(servicio.precio)}
+                </span>
+            </article>
+        `;
+    }
+} */
+
+
+/*
+<div class="card">
+<span class="badge">-11%</span>
+<img src="img/Galeria/ram.webp" alt="Kingston ram">
+span class="etiqueta-recomendado">Recomendado</span>
+<div class="nombre">Kingston NV3 1TB Disco SSD 6000MB/S NVMe PCIe 4.0 M.2 Gen4 2280 3D Nand</div>
+<div><span class="precio-actual">149,95€</span><span class="precio-anterior">169,95€</span></div>
+<div class="valoracion">4,7/5 ⭐ 1434 opiniones</div>
+<div class="envio">📦 Envío gratis. Entrega el viernes, 11 de septiembre</div>
+<a href="#" class="ver-otras">Ver otras opciones</a>
+</div>
+
+                */
