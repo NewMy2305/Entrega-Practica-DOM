@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PcComponentes</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<script src="app.js"></script>
+</head>
+<body>
+
+	
+	<header class="site-header">
+		<div class="header-top">
+			<a href="#" class="logo">
+			<img src="img/logo-pccomponentes.svg" alt="Pccomponentes"></a>
+
+			<a href="#categorias" class="btn-categorias">
+				<img src="img/Favicon/menu.png" alt="Menu hamburguesa">
+				Todas las categorías</a>
+
+			<form class="buscador" role="search">
+				<select>
+					<option>Todo el catálogo</option>
+				</select>
+				<input type="search" placeholder="Buscar">
+			</form>
+
+			<nav class="header-actions" aria-label="Acciones de usuario">
+				<ul>
+					<li><a href="#">
+						<img src="img/Favicon/usuario.png" alt="Usuario">
+						Mi cuenta</a></li>
+					<li><a href="#">
+						<img src="img/Favicon/carrito-de-compras.png" alt="Carrito Compra">
+						Mi cesta</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<nav class="main-nav" aria-label="Navegación principal">
+			<ul>
+				<li><a href="#">Nuevo iPhone 18 pro</a></li>
+				<li><a href="#reacondicionados">Reacondicionados</a></li>
+				<li><a href="#ofertas" class="destacado">Campañas y ofertas</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+		
+		<section class="hero" id="ofertas">
+			<div class="hero-texto">
+				<h1>Expertos en tecnología</h1>
+				<p>Con un servicio 5 estrellas</p>
+			</div>
+
+			<ul class="hero-banners">
+				<li><a href="#"><img src="img/500x320-pccom-estudiar-es.webp" alt="Banner Ofertas TOP"></a></li>
+				<li><a href="#"><img src="img/Vuelta al cole.webp" alt="Banner Vuelta al cole"></a></li>
+				<li><a href="#"><img src="img/Ofertas top.webp" alt="Banner PcCom estudiar"></a></li>
+			</ul>
+		</section>
+
+		
+		<section class="categorias" id="categorias">
+			<h2>Explora nuestras categorías destacadas</h2>
+			<ul class="lista-categorias">
+				<li>
+					<a href="https://www.pccomponentes.com/categorias/portatiles?_gl=1*1nuqkcd*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwwL_UBhAjEiwAEhuT5C_K4r7wXUgbX9_wp2qM4se9qGXRxZEc3P16gR-Ic-9u7gmKDWkrgxoCYIMQAvD_BwE">
+						<img src="img/categorias/portatiles.webp" alt="Portátiles">
+						<span>Portátiles</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.pccomponentes.com/categorias/smartphone-moviles?_gl=1*1nuqkcd*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwwL_UBhAjEiwAEhuT5C_K4r7wXUgbX9_wp2qM4se9qGXRxZEc3P16gR-Ic-9u7gmKDWkrgxoCYIMQAvD_BwE">
+						<img src="img/categorias/smartphones.webp" alt="Smartphones">
+						<span>Smartphones</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.pccomponentes.com/categorias/sobremesa?_gl=1*wfh2hg*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwwL_UBhAjEiwAEhuT5LzD1tuvsYnE___JbYsIJrknt_RC7FuCiQHDIpjoFgP4RGKWHPWPsRoC-68QAvD_BwE">
+						<img src="img/categorias/sobremesas.webp" alt="Sobremesas">
+						<span>Sobremesas</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.pccomponentes.com/categorias/monitores-pc?_gl=1*wfh2hg*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwwL_UBhAjEiwAEhuT5LzD1tuvsYnE___JbYsIJrknt_RC7FuCiQHDIpjoFgP4RGKWHPWPsRoC-68QAvD_BwE">
+						<img src="img/categorias/monitores.webp" alt="Monitores">
+						<span>Monitores</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.pccomponentes.com/categorias/smartwatch?_gl=1*198aumk*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwwL_UBhAjEiwAEhuT5LzD1tuvsYnE___JbYsIJrknt_RC7FuCiQHDIpjoFgP4RGKWHPWPsRoC-68QAvD_BwE">
+						<img src="img/categorias/smartwatches.webp" alt="Smartwatches">
+						<span>Smartwatches</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.pccomponentes.com/categorias/televisores?_gl=1*198aumk*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwwL_UBhAjEiwAEhuT5LzD1tuvsYnE___JbYsIJrknt_RC7FuCiQHDIpjoFgP4RGKWHPWPsRoC-68QAvD_BwE">
+						<img src="img/categorias/tvs.webp" alt="Televisores">
+						<span>Televisores</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.pccomponentes.com/categorias/aire-acondicionado?_gl=1*12xxs3l*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwwL_UBhAjEiwAEhuT5LzD1tuvsYnE___JbYsIJrknt_RC7FuCiQHDIpjoFgP4RGKWHPWPsRoC-68QAvD_BwE">
+						<img src="img/categorias/aires.webp" alt="Aires acondicionados">
+						<span>Aires acondicionados</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.pccomponentes.com/categorias/ventiladores-hogar?_gl=1*1x2ht2o*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwwL_UBhAjEiwAEhuT5LzD1tuvsYnE___JbYsIJrknt_RC7FuCiQHDIpjoFgP4RGKWHPWPsRoC-68QAvD_BwE">
+						<img src="img/categorias/ventiladores.webp" alt="Ventiladores">
+						<span>Ventiladores</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.pccomponentes.com/categorias/mini-pcs?_gl=1*1x2ht2o*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwwL_UBhAjEiwAEhuT5LzD1tuvsYnE___JbYsIJrknt_RC7FuCiQHDIpjoFgP4RGKWHPWPsRoC-68QAvD_BwE">
+						<img src="img/categorias/minipcs.webp" alt="Mini PCs">
+						<span>Mini PCs</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.pccomponentes.com/categorias/robot-aspiradoras?_gl=1*d1yo14*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwwL_UBhAjEiwAEhuT5LzD1tuvsYnE___JbYsIJrknt_RC7FuCiQHDIpjoFgP4RGKWHPWPsRoC-68QAvD_BwE">
+						<img src="img/categorias/robots.webp" alt="Robots aspiradores">
+						<span>Robots aspiradores</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.pccomponentes.com/categorias/gafas-inteligentes?_gl=1*d1yo14*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwwL_UBhAjEiwAEhuT5LzD1tuvsYnE___JbYsIJrknt_RC7FuCiQHDIpjoFgP4RGKWHPWPsRoC-68QAvD_BwE">
+						<img src="img/categorias/gafas.webp" alt="Gafas inteligentes">
+						<span>Gafas inteligentes</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.pccomponentes.com/categorias/patinetes-electricos?_gl=1*d1yo14*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwwL_UBhAjEiwAEhuT5LzD1tuvsYnE___JbYsIJrknt_RC7FuCiQHDIpjoFgP4RGKWHPWPsRoC-68QAvD_BwE">
+						<img src="img/categorias/patinetes.webp" alt="Patinetes electricos">
+						<span>Patinetes electricos</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+		
+		<!--  CARRUSEL OFERTAS TOP-->
+
+		<section class="carrusel-lateral" aria-label="Consigue las ofertas más TOP del momento!">
+			<div class="titulo">
+				<h2>Consigue las ofertas mas TOP del momento!</h2>
+				<a href="#" class="ver-mas">Ver más -></a>
+			</div>
+
+
+			<div class="carrusel">
+    			<div class="card">
+      				<span class="badge">-38%</span>
+					<a href="https://www.pccomponentes.com/monitor-aoc-24g4ha-23-8-fast-ips-full-hd-200hz-1ms-hdr10-altura-ajustable-adaptive-sync" class="card-link">
+      				<img src="img/Ofertas Top/monitor.webp" alt="Monitor AOC">
+      				<div class="nombre">Monitor AOC 24G4HA 23.8" Fast IPS Full HD 200Hz 1ms HDR10 Altura Ajustable Adaptive Sync</div>
+      				<div><span class="precio-actual">79,99€</span><span class="precio-anterior">129,90€</span></div>
+      				<div class="valoracion">⭐ 4,6/5 · 39 opiniones</div>
+      				<div class="envio">📦 Envío gratis. Entrega el miércoles, 9 de septiembre</div>
+					</a>
+    			</div>
+
+			<div class="card">
+      			<span class="badge">-10%</span>
+				<a href="https://www.pccomponentes.com/procesador-amd-ryzen-9-9950x3d-4-3-5-7ghz-box" class="card-link">
+      			<img src="img/Ofertas Top/procesador.webp" alt="AMD Ryzen 9">
+      			<div class="nombre">AMD Ryzen 9 9950X3D 4.3/5.7GHz Box</div>
+      			<div><span class="precio-actual">599,90€</span><span class="precio-anterior">730€</span></div>
+      			<div class="valoracion">⭐ 4,7/5 · 129 opiniones</div>
+      			<div class="envio">📦 Envío gratis. Entrega el miércoles, 9 de septiembre</div>
+				</a>
+    		</div>
+
+
+			<div class="card">
+      			<span class="badge">-16%</span>
+				<a href="https://www.pccomponentes.com/samsung-galaxy-a57-5g-8gb-128gb-6-7-gris-version-internacional" class="car-link">
+      			<img src="img/Ofertas Top/samsung.webp" alt="MacBook Air">
+      			<div class="nombre">Samsung Galaxy A57 5G 8GB 128GB 6,7" Gris Versión Internacional</div>
+      			<div><span class="precio-actual">329,89€</span><span class="precio-anterior">395,87€</span></div>
+      			<div class="valoracion">⭐ 4,7/5 · 7715 opiniones</div>
+      			<div class="envio">📦 Envío gratis. Entrega el jueves, 10 de septiembre</div>
+				</a>
+    		</div>
+
+
+			<div class="card">
+      			<span class="badge">-36%</span>
+				<a href="https://www.pccomponentes.com/pccom-ready-amd-ryzen-7-5800x-32gb-1tb-ssd-rtx-5060-v2-windows-11-home" class="card-link">
+      			<img src="img/Ofertas Top/pccom.webp" alt="Pccom">
+      			<div class="nombre">PcCom Ready AMD Ryzen 7 5800X / 32GB / 1TB SSD / RTX 5060 V3</div>
+      			<div><span class="precio-actual">1.239€</span><span class="precio-anterior">1.939€</span></div>
+      			<div class="valoracion">⭐ 4,9/5 · 14 opiniones</div>
+      			<div class="envio">📦 Envío gratis. Entrega el miércoles, 9 de septiembre</div>
+				</a>
+    		</div>
+
+			
+			<div class="card">
+      			<span class="badge">-33%</span>
+				<a href="https://www.pccomponentes.com/portatil-acer-nitro-v-15-anv15-52-156-intel-core-i9-13900h-32gb-1tb-ssd-rtx-5060-sin-sistema-operativo" class="card-link">
+      			<img src="img/Ofertas Top/acer nitro.webp" alt="Portatil Acer Nitro">
+      			<div class="nombre">Portátil Acer Nitro V 15 ANV15-52 15.6" Intel Core i9-13900H 32GB 1TB SSD RTX 5060 Sin Sistema Operativo</div>
+      			<div><span class="precio-actual">1.199€</span><span class="precio-anterior">1499€</span></div>
+      			<div class="valoracion">⭐ 4,4/5 · 1865 opiniones</div>
+      			<div class="envio">📦 Envío gratis. Entrega el miércoles, 9 de septiembre</div>
+				</a>
+    		</div>
+
+			<div class="card">
+      			<span class="badge">-39%</span>
+				<a href="https://www.pccomponentes.com/owlotech-manager-mesa-de-escritorio-regulable-en-altura-con-motor-120x60cm-negra" class="card-link">
+      			<img src="img/Ofertas Top/mesa.webp" alt="Mesa Elevable">
+      			<div class="nombre">Owlotech Manager Mesa de Escritorio Regulable en Altura con Motor 120x60cm Negra</div>
+      			<div><span class="precio-actual">139,98€</span><span class="precio-anterior">229,99€</span></div>
+      			<div class="valoracion">⭐ 4,6/5 · 101 opiniones</div>
+      			<div class="envio">📦 Envío gratis. Entrega el miércoles, 9 de septiembre</div>
+				</a>
+    		</div>
+			
+			<div class="card">
+      			<span class="badge">-36%</span>
+				<a href="https://www.pccomponentes.com/freidora-de-aire-cosori-dual-blaze-twinfry-con-revestimiento-ceramico-10l-2800w-doble-cesta-gris" class="card-link">
+      			<img src="img/Ofertas Top/freifora.jpg" alt="Freidora aire">
+      			<div class="nombre">Freidora de aire Cosori Dual Blaze Twinfry con revestimiento cerámico, 10L, 2800W, Doble cesta, Gris</div>
+      			<div><span class="precio-actual">189€</span><span class="precio-anterior">299€</span></div>
+      			<div class="valoracion">⭐ 4,8/5 · 316 opiniones</div>
+      			<div class="envio">📦 Envío gratis. Entrega el miércoles, 10 de septiembre</div>
+				</a>
+    		</div>
+  		</div>
+
+		<button class="flecha flecha-izq" onclick="desplazar(this, -1)" aria-label="Ver producto anterior">‹</button>
+		<button class="flecha flecha-der" onclick="desplazar(this, 1)" aria-label="Ver siguiente producto">›</button>
+
+		</section>
+
+		<article class="producto-destacado">
+			<img src="img/1750-apple-macbook-neo-13-apple-a18-pro-8gb-512gb-ssd-gpu-5-nucleos-macos-touch-id-citrico.webp" alt="Apple MacBook Neo 13 pulgadas color Índigo">
+			<div class="producto-info">
+				<p class="etiqueta">Precio estudiante</p>
+				<h2>Apple MacBook Neo 13" Apple A18 Pro 8GB 512GB SSD</h2>
+				<p class="precio">829€ <span class="precio-anterior">899€</span></p>
+				<p class="valoracion">4,7/5 · 258 opiniones</p>
+				<a class="btn-comprar"
+				   href="https://www.pccomponentes.com/portatil-apple-macbook-neo-13-apple-a18-pro-8gb-512gb-ssd-gpu-5-nucleos-macos-touch-id-indigo"
+				   target="_blank" rel="noopener">Ver producto</a>
+			</div>
+		</article>
+
+		
+		<section class="banner-reacondicionados" id="reacondicionados">
+			<img src="img/1560x250.webp" alt="Productos reacondicionados">
+			<div class="banner-texto">
+				<h2>Seleccionados y reparados por nuestros expertos</h2>
+				<ul class="ventajas-reacos">
+					<li>Hasta 3 años de garantía</li>
+					<li>Devoluciones gratuitas</li>
+					<li>Hasta 20% ahorro vs. nuevo</li>
+					<li>100% revisado por nuestro equipo</li>
+				</ul>
+				<a class="btn-comprar" href="#">Ver reacondicionados</a>
+			</div>
+		</section>
+
+		<section class="carrusel-lateral" aria-label="Consigue las ofertas más TOP del momento!">
+			<div class="titulo">
+				<h2>Estudia con ventaja en tu nuevo Macbook Air</h2>
+				<a href="#" class="ver-mas">Ver más -></a>
+			</div>
+
+
+			<div class="carrusel">
+    			<div class="card">
+      				<span class="badge">-12%</span>
+					<a href="https://www.pccomponentes.com/portatil-apple-macbook-air-13-apple-m5-16gb-512gb-ssd-gpu-10-nucleos-macos-medianoche-plus-cargador-35w" class="card-link">
+      				<img src="img/Macbook/1915-apple-macbook-air-13-apple-m5-16gb-512gb-ssd-gpu-8-nucleos-macos-medianoche-cargador-35w-ff319209-e38e-44bb-a7d1-b6a0992cb5a9.webp" alt="MacBook Air">
+      				<div><span class="tag">Incluye regalo</span><span class="tag">Precio estudiante</span></div>
+      				<div class="nombre">Apple MacBook Air 13" Apple M5 16GB 512GB SSD GPU 10 núcleos macOS Medianoche</div>
+      				<div><span class="precio-actual">1.399€</span><span class="precio-anterior">1.599€</span></div>
+      				<div class="valoracion">⭐ 4,8/5 · 165 opiniones</div>
+      				<div class="envio">📦 Envío gratis. Entrega mañana</div>
+					</a>
+    			</div>
+
+			<div class="card">
+      			<span class="badge">-10%</span>
+				<a href="https://www.pccomponentes.com/portatil-apple-macbook-air-13-m5-16gb-512gb-ssd-gpu-10-nucleos-macos-medianoche" class="card-link">
+      			<img src="img/Macbook/1915-apple-macbook-air-13-apple-m5-16gb-512gb-ssd-gpu-8-nucleos-macos-medianoche-cargador-35w-ff319209-e38e-44bb-a7d1-b6a0992cb5a9.webp" alt="MacBook Air">
+      			<div><span class="tag">Incluye regalo</span><span class="tag">Precio estudiante</span></div>
+      			<div class="nombre">Apple MacBook Air 13" M5 16GB 512GB SSD GPU 10 núcleos macOS Medianoche</div>
+      			<div><span class="precio-actual">1.379€</span><span class="precio-anterior">1.539€</span></div>
+      			<div class="valoracion">⭐ 4,8/5 · 165 opiniones</div>
+      			<div class="envio">📦 Envío gratis. Entrega mañana</div>
+				</a>
+    		</div>
+
+
+			<div class="card">
+      			<span class="badge">-10%</span>
+				<a href="https://www.pccomponentes.com/portatil-apple-macbook-air-13-apple-m5-16gb-512gb-ssd-gpu-10-nucleos-macos-plata-plus-cargador-35w" class="card-link">
+      			<img src="img/Macbook/verde.webp" alt="MacBook Air">
+      			<div><span class="tag">Incluye regalo</span><span class="tag">Precio estudiante</span></div>
+      			<div class="nombre">Apple MacBook Air 13" M5 16GB 512GB SSD GPU 10 núcleos macOS Plata + Regalo</div>
+      			<div><span class="precio-actual">1.379€</span><span class="precio-anterior">1.539€</span></div>
+      			<div class="valoracion">⭐ 4,8/5 · 165 opiniones</div>
+      			<div class="envio">📦 Envío gratis. Entrega mañana</div>
+				</a>
+    		</div>
+
+
+			<div class="card">
+      			<span class="badge">-11%</span>
+				<a href="https://www.pccomponentes.com/apple-macbook-air-13-apple-m5-16gb-1tb-ssd-gpu-10-nucleos-macos-medianoche" class="card-link">
+      			<img src="img/Macbook/1915-apple-macbook-air-13-apple-m5-16gb-512gb-ssd-gpu-8-nucleos-macos-medianoche-cargador-35w-ff319209-e38e-44bb-a7d1-b6a0992cb5a9.webp" alt="MacBook Air">
+      			<div><span class="tag">Precio estudiante</span></div>
+      			<div class="nombre">Apple MacBook Air 13" Apple M5 16GB 1TB SSD GPU 10 núcleos macOS Medianoche</div>
+      			<div><span class="precio-actual">1.549€</span><span class="precio-anterior">1.759€</span></div>
+      			<div class="valoracion">⭐ 4,8/5 · 165 opiniones</div>
+      			<div class="envio">📦 Envío gratis. Entrega mañana</div>
+				</a>
+    		</div>
+
+			<div class="card">
+      			<span class="badge">-10%</span>
+				<a href="https://www.pccomponentes.com/portatil-apple-macbook-air-13-apple-m5-16gb-512gb-ssd-gpu-10-nucleos-mac-os-blanco-estrella-plus-cargador-35w" class="card-link"> 
+      			<img src="img/Macbook/verde.webp" alt="MacBook Air">
+      			<div><span class="tag">Incluye regalo</span><span class="tag">Precio estudiante</span></div>
+      			<div class="nombre">Apple MacBook Air 13" M5 16GB 512GB SSD GPU 10 núcleos macOS Blanco</div>
+      			<div><span class="precio-actual">1.379€</span><span class="precio-anterior">1.539€</span></div>
+      			<div class="valoracion">⭐ 4,8/5 · 165 opiniones</div>
+      			<div class="envio">📦 Envío gratis. Entrega mañana</div>
+				</a>
+    		</div>
+
+			<div class="card">
+      			<span class="badge">-10%</span>
+				<a href="https://www.pccomponentes.com/portatil-apple-macbook-air-13-apple-m5-16gb-512gb-ssd-gpu-10-nucleos-mac-os-blanco-estrella-plus-cargador-35w" class="card-link">
+      			<img src="img/Macbook/dorado.jpg" alt="MacBook Air">
+      			<div><span class="tag">Incluye regalo</span><span class="tag">Precio estudiante</span></div>
+      			<div class="nombre">Apple MacBook Air 13" Apple M5 16 GB 512GB SSD GPU 10 núcleos macOS Blanco Estrella + Regalo Belkin USB-C Multipuerto 6 en 1</div>
+      			<div><span class="precio-actual">1.379€</span><span class="precio-anterior">1.539€</span></div>
+      			<div class="valoracion">⭐ 4,8/5 · 165 opiniones</div>
+      			<div class="envio">📦 Envío gratis. Entrega mañana</div>
+				</a>
+    		</div>
+			
+  		</div>
+		<button class="flecha flecha-izq" onclick="desplazar(this, -1)" aria-label="Ver producto anterior">‹</button>
+		<button class="flecha flecha-der" onclick="desplazar(this, 1)" aria-label="Ver siguiente producto">›</button>
+
+		</section>
+
+		<section class="carrusel-lateral carrusel-compacto">
+
+			<div class="carrusel">
+
+				<div class="card">
+					<a href="https://www.pccomponentes.com/landings/reacondicionados" class="card-link">
+					<img src="img/servicios/reaco.webp" alt="Reacondicionados">
+					<div class="pie">Reacondicionados</div>
+					</a>
+				</div>
+
+				<div class="card">
+					<a href="https://www.pccomponentes.com/landings/servicios" class="card-link">
+					<img src="img/servicios/servicios.webp" alt="Servicios">
+					<div class="pie">Servicios</div>
+					</a>
+				</div>
+
+				<div class="card">
+					<a href="https://www.pccomponentes.com/landings/pccom" class="card-link">
+					<img src="img/servicios/ordenadores pccom.webp" alt="Ordenadores">
+					<div class="pie">Ordenadores PcCom</div>
+					</a>
+				</div>
+
+				<div class="card">
+					<a href="https://help.pccomponentes.com/hc/es-es/articles/19504957135517-Promoci%C3%B3n-de-env%C3%ADo-gratuito" class="car-link">
+					<img src="img/servicios/envio gratis.webp" alt="Envio gratis">
+					<div class="pie">Envío gratuitos en pedidos superiores a 50€</div>
+					</a>
+				</div>
+
+				<div class="card">
+					<a href="https://help.pccomponentes.com/hc/es-es/articles/19504278450461-Plazos-de-entrega" class="car-link">
+					<img src="img/servicios/24 horas.webp" alt="24 horas">
+					<div class="pie">Recibe tu pedido en 24h</div>
+					</a>
+				</div>
+
+				<div class="card">
+					<a href="https://help.pccomponentes.com/hc/es-es/articles/21624280186397-Devolver-un-producto" class="car-link">
+					<img src="img/servicios/dev gratuitas.webp" alt="Devoluciones">
+					<div class="pie">Devoluciones gratuitas</div>
+					</a>
+				</div>
+
+				<div class="card">
+					<a href="https://help.pccomponentes.com/hc/es-es/categories/19806195784221-garantias-y-devoluciones">
+					<img src="img/servicios/garantia.webp" alt="Garantía">
+					<div class="pie">Garantía de solución en 24h</div>
+					</a>
+				</div>
+
+			</div>
+
+			<button class="flecha flecha-izq" onclick="desplazar(this, -1)" aria-label="Ver producto anterior">‹</button>
+			<button class="flecha flecha-der" onclick="desplazar(this, 1)" aria-label="Ver siguiente producto">›</button>
+
+		</section>
+
+
+		<section class="productos-galeria" aria-label="Descubre los productos más vendidos">
+			<div class="titulo">
+				<h2>Descubre los productos más vendidos</h2>
+			</div>
+
+			<div class="galeria">
+				<div class="card">
+					<span class="badge">-11%</span>
+					<img src="img/Galeria/ram.webp" alt="Kingston ram">
+					<span class="etiqueta-recomendado">Recomendado</span>
+					<div class="nombre">Kingston NV3 1TB Disco SSD 6000MB/S NVMe PCIe 4.0 M.2 Gen4 2280 3D Nand</div>
+					<div><span class="precio-actual">149,95€</span><span class="precio-anterior">169,95€</span></div>
+					<div class="valoracion">4,7/5 ⭐ 1434 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega el viernes, 11 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-37%</span>
+					<img src="img/Galeria/monitor msi.webp" alt="MAG 272F">
+					<span class="etiqueta-recomendado">Recomendado</span>
+					<div class="nombre">Monitor MSI MAG 272F X24 27" FHD 240Hz Rapid IPS HDR Adaptive-Sync AI Vision Antirreflejo</div>
+					<div><span class="precio-actual">119€</span><span class="precio-anterior">189€</span></div>
+					<div class="valoracion">4,6/5 ⭐ 3548 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega mañana</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-30%</span>
+					<img src="img/Galeria/monitor aoc.webp" alt="Q27G4XF">
+					<div class="nombre">AOC Q27G4XF 27" LED Fast IPS QHD 180Hz Regulable en Altura</div>
+					<div><span class="precio-actual">139€</span><span class="precio-anterior">199,90€</span></div>
+					<div class="valoracion">4,6/5 ⭐ 6676 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega el viernes, 11 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-24%</span>
+					<img src="img/Galeria/monitor pccom.webp" alt="Elysium 27">
+					<div class="nombre">Monitor gaming PcCom Elysium 27" Fast IPS FHD 200Hz Adaptive Sync</div>
+					<div><span class="precio-actual">109,99€</span><span class="precio-anterior">144,99€</span></div>
+					<div class="valoracion">4,6/5 ⭐ 1816 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega el viernes, 11 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-33%</span>
+					<img src="img/Galeria/tempest combo.webp" alt="Tempest combo">
+					<div class="nombre">Tempest Combo 3100 PRO RGB Teclado + Ratón + Auriculares + Alfombrilla</div>
+					<div><span class="precio-actual">30€</span><span class="precio-anterior">44,99€</span></div>
+					<div class="precio-minimo">¡Precio mínimo histórico!</div>
+					<div class="valoracion">4,5/5 ⭐ 5939 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega el viernes, 11 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-34%</span>
+					<img src="img/Galeria/monitor msi 200.webp" alt="Msi 200">
+					<div class="nombre">Monitor MSI MAG 274QF E20 27" WQHD 200Hz IPS Plano VESA DisplayHDR 400 Tiempo de Respuesta 0,5 ms</div>
+					<div><span class="precio-actual">149€</span><span class="precio-anterior">229€</span></div>
+					<div class="precio-minimo">¡Precio mínimo histórico!</div>
+					<div class="valoracion">4,7/5 ⭐ 2211 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega el viernes, 11 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-41%</span>
+					<img src="img/Galeria/logitech.webp" alt="Logitech">
+					<div class="nombre">Logitech G305 LightSpeed Ratón Inalámbrico Gaming 12000DPI Negro</div>
+					<div><span class="precio-actual">34,99€</span><span class="precio-anterior">59,99€</span></div>
+					<div class="valoracion">4,7/5 ⭐ 3415 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega mañana</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-38%</span>
+					<img src="img/Galeria/monitor aoc 200.webp" alt="AOC 200">
+					<div class="nombre">Monitor AOC 24G4HA 23.8" Fast IPS Full HD 200Hz 1ms HDR10 Altura Ajustable Adaptive Sync</div>
+					<div><span class="precio-actual">79,99€</span><span class="precio-anterior">129,90€</span></div>
+					<div class="precio-minimo">¡Precio mínimo histórico!</div>
+					<div class="valoracion">4,7/5 ⭐ 53 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega mañana</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-37%</span>
+					<img src="img/Galeria/forgeon captain.webp" alt="Forgeon Captain">
+					<div class="nombre">Forgeon Captain RGB Auriculares con Micrófono Inalámbricos Gaming Negros</div>
+					<div><span class="precio-actual">49,99€</span><span class="precio-anterior">79,99€</span></div>
+					<div class="precio-minimo">¡Precio mínimo histórico!</div>
+					<div class="valoracion">4,5/5 ⭐ 1418 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega el viernes, 11 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-50%</span>
+					<img src="img/Galeria/corsair gaming.webp" alt="Corsair gaming">
+					<div class="nombre">Corsair Gaming Bundle Corsair K55 CORE RGB + Corsair Harpoon RGB Pro + Corsair MM100 + Corsair HS35 v2</div>
+					<div><span class="precio-actual">64,99€</span><span class="precio-anterior">129,99€</span></div>
+					<div class="valoracion">4,7/5 ⭐ 1418 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega el viernes, 11 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-25%</span>
+					<img src="img/Galeria/portatil alurion.webp" alt="Portatil Alurin">
+					<div class="nombre">Portátil Alurin Flex Advance AMD Ryzen 7-5825U 15.6"/ 16GB/500GB/Windows 11 Home</div>
+					<div><span class="precio-actual">489,99€</span><span class="precio-anterior">654,99€</span></div>
+					<div class="valoracion">4,3/5 ⭐ 272 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega a partir del lunes, 21 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-12%</span>
+					<img src="img/Galeria/macbook air.webp" alt="Macbook Air">
+					<div class="nombre">Apple MacBook Air 13" Apple M5 16GB 512GB SSD GPU 10 núcleos macOS Medianoche + Cargador 35W + Regalo Belkin USB-C Multipuerto 6 en 1</div>
+					<div><span class="precio-actual">1.399€</span><span class="precio-anterior">1.599€</span></div>
+					<div class="valoracion">4,8/5 ⭐ 179 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega mañana</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="equipo-experto" aria-label="Nuestro equipo experto te ayuda a elegir">
+			<div class="titulo">
+				<h2>Nuestro equipo experto te ayuda a elegir</h2>
+				<a href="#" class="ver-guias">Ver todas las guías</a>
+			</div>
+
+			<div class="guias-grid">
+
+				<a href="#" class="guias">
+					<img src="img/cricut-maquina-corte.webp" alt="Cricut maquina">
+					<div class="PieGuia">
+						<span>Con Cricut, personaliza todo lo que imagines</span>
+						<span class="flecha-guia">></span>
+					</div>
+				</a>
+
+				<a href="#" class="guias">
+					<img src="img/unnamed-13-3.jpg" alt="Impresoras 3D">
+					<div class="PieGuia">
+						<span>Te ayudamos a elegir la mejor impresora 3D para empezar tu universo creativo</span>
+						<span class="flecha-guia">></span>
+					</div>
+				</a>
+			</div>	
+		</section>
+
+
+		<section class="reacondicionados" id="reacondicionados">
+			<div class="reaco-principal">
+				<img src="img/titular reacondicionados.webp" alt="RE Acondicionados" class="reaco-logo">
+				<h2 class="reaco-titulo">
+					Seleccionados y reparados por <span class="destacado">nuestros expertos</span>
+					en <span class="destacado">nuestros propios talleres</span>
+				</h2>
+				<div class="reaco-botones">
+					<a href="#" class="btn-oscuro">Ver reacondicionados</a>
+					<a href="#" class="btn-outline">Preguntas frecuentes</a>
+				</div>
+			</div>
+
+			<div class="reaco-ventajas">
+
+				<div class="ventaja-item">
+					<span class="ventaja-icono">🛡️</span>
+					<span>Hasta 3 años de garantía</span>
+				</div>
+				<div class="ventaja-item">
+					<span class="ventaja-icono">💸</span>
+					<span>Devoluciones gratuitas</span>
+				</div>
+				<div class="ventaja-item">
+					<span class="ventaja-icono">%</span>
+					<span>Hasta 20% ahorro vs. nuevo</span>
+				</div>
+				<div class="ventaja-item">
+					<span class="ventaja-icono">👍</span>
+					<span>100% revisado por nuestro equipo</span>
+				</div>
+			</div>
+
+			<div class="reaco-buscados">
+				<h3>Los más buscados</h3>
+				<div class="pills">
+					<a href="#" class="pill">📱 iphone</a>
+					<a href="#" class="pill">💻 MacBook</a>
+					<a href="#" class="pill">📱 Smartphones</a>
+					<a href="#" class="pill">💻 Portátiles</a>
+					<a href="#" class="pill">🏠 Hogar</a>
+					<a href="#" class="pill">📺 Televisores</a>
+					<a href="#" class="pill">🎮 Consolas</a>
+					<a href="#" class="pill pill-mas">Ver más</a>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="Baner-novedades" aria-label="Descubre nuestras novedades">
+			
+			</div>
+			<div class="grid-novedades">
+	
+				<a href="#" class="novedades">
+					<h2>Nuestra nueva caja de PC</h2>
+					<img src="img/Novedades/Caja.webp" alt="Carcasa">
+					<div class="PieNovedades">
+						<span>La mejor torre para nuestros clientes</span>
+					</div>
+				</a>
+
+				<a href="#" class="novedades">
+					<h2>Watch Series 12</h2>
+					<img src="img/Novedades/apple.webp" alt="apple">
+					<div class="PieNovedades">
+						<span>Descubre las novedades de Apple</span>
+					</div>
+				</a>
+
+				<a href="#" class="novedades">
+					<h2>Entretenimiento en casa</h2>
+					<img src="img/Novedades/zelda.webp" alt="Entretenimiento">
+					<div class="PieNovedades">
+						<span>Vuelve la aventura que hizo historia</span>
+					</div>
+				</a>
+
+				<a href="#" class="novedades">
+					<h2>Hogar</h2>
+					<img src="img/Novedades/hogar.webp" alt="Freidora">
+					<div class="PieNovedades">
+						<span>La freidora de cristal que sorprende</span>
+					</div>
+				</a>
+			</div>
+
+
+		</section>
+
+		<section class="carrusel-lateral carrusel-compacto">
+
+			<div class="carrusel">
+				<div class="card-marcas">
+					<a href="" class="card-link"></a>
+					<img src="img/Marcas/hp.webp" alt="hp">
+				</div>
+				<div class="card-marcas">
+					<a href="" class="card-link"></a>
+					<img src="img/Marcas/samsung.webp" alt="samsung">
+				</div>
+				<div class="card-marcas">
+					<a href="" class="card-link"></a>
+					<img src="img/Marcas/mac.webp" alt="apple">
+				</div>
+				<div class="card-marcas">
+					<a href="" class="card-link"></a>
+					<img src="img/Marcas/intel.webp" alt="intel">
+				</div>
+				<div class="card-marcas">
+					<a href="" class="card-link"></a>
+					<img src="img/Marcas/windows11.webp" alt="windows">
+				</div>
+				<div class="card-marcas">
+					<a href="" class="card-link"></a>
+					<img src="img/Marcas/corsair.webp" alt="corsair">
+				</div>
+				<div class="card-marcas">
+					<a href="" class="card-link"></a>
+					<img src="img/Marcas/chromebook.webp" alt="chromebook">
+				</div>
+				<div class="card-marcas">
+					<a href="" class="card-link"></a>
+					<img src="img/Marcas/logitech-logo.webp" alt="logitech">
+				</div>
+				<div class="card-marcas">
+					<a href="" class="card-link"></a>
+					<img src="img/Marcas/asus.webp" alt="asus">
+				</div>
+
+
+			<button class="flecha flecha-izq" onclick="desplazar(this, -1)" aria-label="Ver producto anterior">‹</button>
+			<button class="flecha flecha-der" onclick="desplazar(this, 1)" aria-label="Ver siguiente producto">›</button>
+
+
+			</div>
+		</section>
+
+		<article class="Pie-pagina">
+			<h2>Pccomponentes es tu tienda de tecnología e informática</h2>
+			<p>Somos la tienda online líder en tecnología, basada en la confianza, la experiencia de compra y el conocimiento del sector tecnológico. 
+			Desde 2005 somos expertos en informática y electrónica. Buscamos innovar, descubrir y responder día a día a las últimas necesidades de la comunidad más tecnológica siendo el cliente nuestra razón de ser, superando siempre sus expectativas.
+			Actualmente contamos con más de 100.000 artículos disponibles y 31.700 m2 repartidos entre todas nuestras instalaciones, además de cuatro tiendas físicas en Madrid, Barcelona, Murcia y Alhama de Murcia.
+			</p>
+
+		</article>
+
+		<article class="Pie-pagina">
+			<h2>Los expertos en tecnología más comprometidos contigo</h2>
+
+			<p>Nuestros <a href="#">compromisos</a> se centran en ser expertos en lo que vendemos y garantizar al cliente todo lo que necesita:</p>
+
+			<ul class="lista-pie">
+				<li><strong>Envíos gratuitos</strong>a partir de 50€ siempre en <strong>24 horas*</strong> (si excepcionalmente incumplimos la fecha de entrega, te devolvemos los gastos de envío).</li>
+				<li><strong>Garantía</strong>con la mejor solución para ti en <strong>24h</strong></li>
+				<li><strong>Devoluciones gratuitas.</strong></li>
+				<li><strong>Atención al cliente local y sin esperas.</strong></li>
+				<li>Nos tomamos muy en serio las <strong>opiniones</strong>de nuestros clientes, y puedes verlas siermpre en nuestros artículos</li>
+			</ul>
+			<p>Bienvenido a PcComponentes.</p>
+		</article>
+
+		<section class="pie-servicios">
+			<div class="card-pie">
+				<img src="img/Pie-pagina/truckdelivery.webp" alt="Envios gratuitos">
+				<a href="#"><strong>Enviós gratuitos</strong> en pedidos a partir de 50€.</a>
+			</div>
+			<div class="card-pie">
+				<img src="img/Pie-pagina/delivery24h.webp" alt="24horas">
+				<a href="#">Recibe tu pedido <strong>en 24h</strong></a>
+			</div>
+			<div class="card-pie">
+				<img src="img/Pie-pagina/solution24h.webp" alt="devoluciones gratuitas">
+				<a href="#"><strong>Devoluciones gratuitas</strong> y garantía de solución en 24h.</a>
+			</div>
+			<div class="card-pie">
+				<img src="img/Pie-pagina/atc.webp" alt="att">
+				<a href="#"><strong>Atención al cliente</strong> local y sin esperas</a>
+			</div>
+		</section>
+
+
+	</main>
+
+	<script>
+  			function desplazar(boton, direccion) {
+    			const carrusel = boton.closest('section').querySelector('.carrusel');
+    			carrusel.scrollBy({ left: 280 * direccion, behavior: 'smooth' });
+  			}
+
+  			function actualizarFlechas(carrusel) {
+    			const seccion = carrusel.closest('section');
+    			const flechaIzq = seccion.querySelector('.flecha-izq');
+    			const flechaDer = seccion.querySelector('.flecha-der');
+
+    			const alPrincipio = carrusel.scrollLeft <= 0;
+    			const alFinal = carrusel.scrollLeft + carrusel.clientWidth >= carrusel.scrollWidth - 1;
+
+    			flechaIzq.style.display = alPrincipio ? 'none' : 'flex';
+    			flechaDer.style.display = alFinal ? 'none' : 'flex';
+  			}
+
+  			document.querySelectorAll('.carrusel').forEach(carrusel => {
+    			actualizarFlechas(carrusel);
+    			carrusel.addEventListener('scroll', () => actualizarFlechas(carrusel));
+  			});
+		</script>
+
+	
+	<footer class="site-footer">
+		<div class="footer-columnas">
+			<section>
+				<h3>Sobre nosotros</h3>
+				<ul>
+					<li><a href="#">Quiénes somos</a></li>
+					<li><a href="#">Compromisos</a></li>
+					<li><a href="#">Nuestras tiendas</a></li>
+					<li><a href="#">Trabaja con nosotros</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3>Ayuda</h3>
+				<ul>
+					<li><a href="#">Devoluciones y garantías</a></li>
+					<li><a href="#">Servicio de reparaciones</a></li>
+					<li><a href="#">Cita asistencia técnica</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3>Síguenos</h3>
+				<ul>
+					<li><a href="https://www.instagram.com/pccomponentes/" target="_blank" rel="noopener">Instagram</a></li>
+					<li><a href="https://www.facebook.com/pccomponentes" target="_blank" rel="noopener">Facebook</a></li>
+					<li><a href="https://www.youtube.com/user/PcComponentescom" target="_blank" rel="noopener">Youtube</a></li>
+				</ul>
+			</section>
+		</div>
+		
+	</footer>
+
+</body>
+</html>
