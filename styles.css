@@ -1053,6 +1053,72 @@ span {
 
 /* APARTADO FILTROS */
 
+.tienda {
+	display: grid;
+	grid-template-columns:260px 1fr;
+	align-items: start;
+	gap: 20px;
+	padding: 16px;
+}
+
+.filtro button{
+	border-radius: 6px;
+	border: 1px solid #ddd;
+	padding: 10px;
+	transition: all 0.25s ease;
+	background-color: var(--color-white);
+}
+
+.filtro button:hover{
+	background: var(--color-hover);
+}
+
+.btn-borrar{
+	font-family: var(--font-heading);
+	font-size: 16px;
+}
+
+.filtro label{
+	font-size: 16px;
+	text-align: center;
+	color: var(--color-text);
+	font-family: var(--font-body);
+	font-weight: bold;
+}
+
+.filtro input{
+	font-family: var(--font-body);
+	font-size: 16px;
+	padding: 16px;
+	border-radius: 6px;
+	border: 1px solid #ddd;
+
+}
+
+.filtro select{
+	font-family: var(--font-body);
+	font-size: 16px;
+	padding: 16px;
+	border-radius: 6px;
+	border: 1px solid #ddd;
+}
+
+.filtro {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 16px;
+}
+
+.filtros h2{
+	font-size: 16px;
+	text-align: center;
+}
+
+
+
+
+
 
 
 /* MEDIAQUERYS */
