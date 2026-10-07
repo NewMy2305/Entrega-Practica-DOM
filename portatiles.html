@@ -49,18 +49,52 @@
 		</nav>
 	</header>
 
+	<section class="filtros">
+		<h2>Búsqueda de filtros</h2>
+
+		<button type="button" id="borrar-filtros" class="btn-borrar">Borrar filtros</button>
+
+		<div class="filtro">
+			<label for="buscar">Buscar por nombre</label>
+			<input type="search" id="buscar" placeholder="Ej: Lenovo">
+		</div>
+
+
+		<div class="filtro">
+			<label for="orden">Ordenar por</label>
+			<select id="orden">
+				<option value="">Sin ordenar</option>
+				<option value="menor">Precio: de menor a mayor</option>
+				<option value="mayor">Precio: de mayor a menor</option>
+			</select>
+		</div>
+
+		<div class="filtro">
+			<label for="estrellas">Valoración minima</label>
+			<select id="estrellas">
+				<option value="0">Todas</option>
+				<option value="4">4 estrellas o más</option>
+				<option value="4.5"> 4,5 estrellas o más</option>
+			</select>
+		</div>
+		
+		<div class="filtro filtro-check">
+			<input type="checkbox" id="solo-ofertas">
+			<label for="solo-ofertas">Solo ofertas</label>
+		</div>
+
+		<div class="filtro">
+			<span class="titulo-filtro">Marca</span>
+			<div class="lista-marcas" id="lista-marcas"></div>
+		</div>
+
+	</section>
+
+
     <main>
-
-
-
 		<section class="galeria" id="productos">
 			<div class="card-productos" id="productos"></div>
-			
-
-
 		</section>
-
-
     </main>
 
 <footer class="site-footer">

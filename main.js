@@ -1,15 +1,21 @@
+
+// Cargamos los productos en un array de objetos.
+
 const productos = [
     {
         name: "Portátil Alurin Flex Advance Intel Core i5-1250P 15.6 / 16GB / 500GB / Windows Home",
+        brand: "Alurin",
         price: 52999,
         stars: 3.4,
         reviews: 14,
         seller: "PcComponentes",
         image: "https://thumb.pccomponentes.com/w-150-150/articles/1108/11082870/1646-portatil-alurin-flex-advance-intel-core-i5-1250p-156-16gb-500gb-windows-home-comprar.jpg",
 
+
     },
     {
         name: "Portátil Asus Vivobook 16 F1607CA-MB311 16 Intel Core Ultra 5 225H 16GB 512GB SSD Arc 130T Sin Sistema Operativo",
+        brand: "Asus",
         price: 59999,
         before: 89999,
         precioMinimo: "¡Precio mínimo histórico!",
@@ -20,6 +26,7 @@ const productos = [
     },
     {
         name: "Portátil HP HyperX OMEN 15 15-gb0000ns 15.3 AMD Ryzen 5 240 16GB 512GB SSD RTX 5050 FreeDOS +REGALO",
+        brand: "HP",
         price: 94900,
         before: 129900,
         precioMinimo: "¡Precio mínimo histórico!",
@@ -30,6 +37,7 @@ const productos = [
     },
     {
         name: "Portátil Lenovo Legion 5 15AHP11 OLED 15.3 AMD Ryzen 7 250 32GB 512GB SSD RTX 5060 FreeDOS",
+        brand: "Lenovo",
         price: 129900,
         stars: 4.6,
         reviews: 391,
@@ -38,6 +46,7 @@ const productos = [
     },
     {
         name: "Portátil HP HyperX OMEN 15-gb0005ns 15.3 AMD Ryzen 7 260 24GB 1TB SSD RTX 5060 FreeDOS + REGALO",
+        brand: "HP",
         price: 119900,
         stars: 4.4,
         reviews: 22,
@@ -46,6 +55,7 @@ const productos = [
     },
     {
         name: "Portátil Lenovo LOQ 15IRX10 15.6 Intel Core i7-13645HX 16GB 512GB SSD RTX 5060 FreeDOS",
+        brand: "Lenovo",
         price: 99900,
         stars: 4.5,
         reviews: 612,
@@ -54,6 +64,7 @@ const productos = [
     },
     {
         name: "Portátil HP Victus 15-fa2092ns 15.6 Intel Core i5-14500HX 16GB 512GB SSD RTX 3050 FreeDOS + REGALO",
+        brand: "HP",
         price: 84900,
         before: 119900,
         precioMinimo: "¡Precio mínimo histórico!",
@@ -64,6 +75,7 @@ const productos = [
     },
     {
         name: "Portátil Lenovo LOQ Essential 15IRX11 15.6 Intel Core i7-13650HX 16GB 512GB SSD RTX 5050 Sin SO",
+        brand: "Lenovo",
         price: 89900,
         before: 119900,
         precioMinimo: "¡Precio mínimo histórico!",
@@ -74,6 +86,7 @@ const productos = [
     },
     {
         name: "Portátil HP OMEN 16 Slim 16-an0066ns 16 Intel Core Ultra 7 255H 16GB 1TB SSD RTX 5060 + REGALO",
+        brand: "HP",
         price: 129900,
         stars: 4.5,
         reviews: 745,
@@ -82,6 +95,7 @@ const productos = [
     },
     {
         name: "Portátil Acer Nitro V 15 ANV15-52 15.6 Intel Core i9-13900H 32GB 1TB SSD RTX 5060 Sin Sistema Operativo",
+        brand: "HP",
         price: 119900,
         stars: 4.4,
         reviews: 1910,
@@ -90,6 +104,7 @@ const productos = [
     }
     
 ]
+
 
 // Funcion para definir precio en enteros.
 
