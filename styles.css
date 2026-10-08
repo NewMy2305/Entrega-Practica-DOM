@@ -1253,3 +1253,17 @@ span {
 	}
 
 }
+
+
+/* MEDIA QUERYS PRODUCTOS-TIENDA MOVILES Y TABLETS */
+
+@media (max-width: 767px) {
+	.tienda {
+		grid-template-columns: 1fr;   /* una sola columna: filtros arriba, productos debajo */
+	}
+
+		.filtro {
+		gap: 8px;
+		padding: 8px 12px;
+	}
+}
