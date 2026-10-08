@@ -1051,7 +1051,7 @@ span {
 }
 
 
-/* APARTADO FILTROS */
+/* APARTADO FILTROS  PRODUCTOS*/
 
 .tienda {
 	display: grid;
@@ -1124,9 +1124,32 @@ span {
 .lista-marcas{
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 12px;
+	align-items: flex-start;
+}
+
+.filtro input[type="checkbox"]{
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	accent-color: #ff6000;
+	cursor: pointer;
+}
+
+.filtro-check {
+	flex-direction: row;
 	align-items: center;
-	font-family: var(--font-body);
+	gap: 10px;
+}
+
+.filtro .marca {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	font-weight: 500;
+	text-align: left;
+	cursor: pointer;
 }
 
 
