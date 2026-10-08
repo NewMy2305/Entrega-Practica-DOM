@@ -95,7 +95,7 @@ const productos = [
     },
     {
         name: "Portátil Acer Nitro V 15 ANV15-52 15.6 Intel Core i9-13900H 32GB 1TB SSD RTX 5060 Sin Sistema Operativo",
-        brand: "HP",
+        brand: "Acer",
         price: 119900,
         stars: 4.4,
         reviews: 1910,
@@ -118,14 +118,14 @@ function formatearPrecio(centimos) {
 
 
 
-//Funcion para cargar las tarjetas de los productos en el html.
+//Funcion para cargar las tarjetas de los productos en el html. Aplicamos tambien filtros
 
 
-function mostrarProductos(){
+function mostrarProductos(lista = productos){
     
     let cardsHtml = '';
 
-    for (const producto of productos){
+    for (const producto of lista){
         cardsHtml += `
             <div class="card-productos">
                 <img src="${producto.image}" alt="${producto.name}">
@@ -143,7 +143,94 @@ function mostrarProductos(){
         `
     }
 
+    if (lista.length === 0) {
+        cardsHtml = '<p>No hay productos que coincidan con tu búsqueda</p>';
+    }
+
     document.getElementById("productos").innerHTML = cardsHtml;
 }
 
 mostrarProductos();
+
+
+
+
+// Funciona para filtrar por marcas
+
+
+function crearFiltroMarcas(){
+    const marcas = [...new Set(productos.map(function (p){return p.brand;}))];
+
+    let html = '';
+    for (const marca of marcas){
+        html +=`
+            <label class="marca">
+                <input type="checkbox" name="marca" value="${marca}"> ${marca}
+            </label>
+        
+        `;
+    }
+
+    document.getElementById("lista-marcas").innerHTML = html;
+
+}
+
+
+// Function para aplicar filtros de buscar, orden, estrellas y solo ofertas
+
+function aplicarFiltros(){
+    const texto = document.getElementById("buscar").value.toLocaleLowerCase();
+    const orden = document.getElementById("orden").value;
+    const estrellasMin = Number(document.getElementById("estrellas").value);
+    const soloOfertas = document.getElementById("solo-ofertas").checked;
+
+    const marcasMarcadas = Array.from(
+        document.querySelectorAll('input[name="marca"]:checked')
+    ).map(function (c) { return c.value; });
+
+    const lista = productos.filter(function (p) {
+        return p.name.toLocaleLowerCase().includes(texto)
+            && p.stars >= estrellasMin
+            && (!soloOfertas || p.before)
+            && (marcasMarcadas.length === 0 || marcasMarcadas.includes(p.brand));
+    });
+
+
+    if (orden === "menor"){
+        lista.sort(function (a, b) { return a.price - b.price; });
+    } else if (orden === "mayor"){
+        lista.sort(function (a, b) { return b.price - a.price; });
+    }
+
+    mostrarProductos(lista);
+}
+
+
+// Funcion de boton borrar filtros
+
+
+function borrarFiltros(){
+    document.getElementById("buscar").value = "";
+    document.getElementById("orden").value = "";
+    document.getElementById("estrellas").value = "0";
+    document.getElementById("solo-ofertas").value = false;
+
+    document.querySelectorAll('input[name="marca"]').forEach(function (c) {
+        c.checked = false;
+    });
+
+    mostrarProductos();
+
+}
+
+
+crearFiltroMarcas();
+mostrarProductos();
+
+["buscar", "orden", "estrellas", "solo-ofertas"].forEach(function (id) {
+    document.getElementById(id).addEventListener("input", aplicarFiltros);
+
+});
+
+document.getElementById("lista-marcas").addEventListener("change", aplicarFiltros);
+document.getElementById("borrar-filtros").addEventListener("click", borrarFiltros);

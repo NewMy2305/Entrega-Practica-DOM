@@ -1115,6 +1115,19 @@ span {
 	text-align: center;
 }
 
+.titulo-filtro{
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.lista-marcas{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	font-family: var(--font-body);
+}
 
 
 
